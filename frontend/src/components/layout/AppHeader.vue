@@ -1,20 +1,26 @@
 <template>
-  <header class="bg-white shadow-sm border-b border-gray-200">
-    <div class="px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center space-x-4">
-        <h1 class="text-xl font-bold text-gray-900">
-          HR Management System
-        </h1>
+  <header class="h-14 bg-white border-b border-gray-100 flex items-center justify-between px-6 flex-shrink-0">
+    <!-- Left -->
+    <div class="flex items-center space-x-3">
+      <div class="w-6 h-6 bg-gray-900 rounded flex items-center justify-center">
+        <span class="text-white font-bold text-2xs">HR</span>
       </div>
-      
-      <div class="flex items-center space-x-4">
-        <div class="text-sm text-gray-600">
-          Welcome, {{ authStore.user?.username || 'Admin' }}
+      <span class="text-sm font-medium text-gray-400 hidden sm:inline">Workforce</span>
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-2">
+        <div class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
+          <span class="text-2xs font-medium text-gray-500">
+            {{ authStore.user?.username?.charAt(0).toUpperCase() || 'A' }}
+          </span>
         </div>
-        <button @click="handleLogout" class="btn-secondary text-sm">
-          Logout
-        </button>
+        <span class="text-sm text-gray-600 hidden sm:inline">{{ authStore.user?.username || 'Admin' }}</span>
       </div>
+      <button @click="handleLogout" class="btn-ghost text-xs !px-2 !py-1">
+        Sign out
+      </button>
     </div>
   </header>
 </template>

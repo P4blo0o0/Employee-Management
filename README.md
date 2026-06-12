@@ -10,6 +10,12 @@ A full-stack Human Resource Management System built with **Vue.js**, **Node.js/E
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
+### Login Page
+![Login Page](screenshots/Login.png)
+
+### Admin Dashboard
+![Dashboard](screenshots/Dashboard.png)
+
 ---
 
 ## 🚀 Tech Stack
@@ -39,14 +45,15 @@ A full-stack Human Resource Management System built with **Vue.js**, **Node.js/E
 - [x] Employee listing with pagination, search, and filtering
 - [x] Department management
 - [x] Position management
-- [x] Basic admin dashboard with statistics
-- [x] Simple login system (admin/employee roles)
+- [x] Admin dashboard with statistics
+- [x] Login system (admin/employee roles)
 - [x] Role-based access control
-- [x] Employee self-service portal (basic)
+- [x] Employee self-service portal
 - [x] Philippine-specific fields (SSS, PhilHealth, Pag-IBIG, TIN)
 - [x] Emergency contact information
-- [x] Employment history tracking
 - [x] Bulk employee import (API ready)
+- [x] Modern Linear/Notion-inspired UI
+- [x] Responsive design
 
 ---
 
@@ -80,12 +87,10 @@ A full-stack Human Resource Management System built with **Vue.js**, **Node.js/E
   - Export to Excel/PDF
 
 - [ ] **UI Enhancements**
-  - Better design system
   - Dark mode support
-  - Mobile responsiveness
   - Charts and data visualization
   - Loading skeletons
-  - Animations and transitions
+  - Advanced animations
 
 ---
 
